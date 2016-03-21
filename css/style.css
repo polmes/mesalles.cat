@@ -6,51 +6,147 @@ body {
 	font-family: sans-serif;
 }
 
-p {
-	font-size: 16px;
-}
-
-.name {
-	font-size: 110px;
-	margin: 200px 0 0;
-	font-weight: bold;
-}
-
-.colorize {
-	-webkit-transition: color 0.5s;
-    transition:         color 0.5s;
-}
-
-.colorize:hover {
-	color: white;
-}
-
-.caps {
-	font-family: Oswald, sans-serif;
-	font-size: 40px;
-	letter-spacing: 1px;
-	color: white;
-	margin: 100px 0 0;
-}
-
-.shadowed {
-	box-shadow: 0 0 50px 0 rgba(0, 0, 0, 1);
-}
-
 /* Clear default CSS links */
+
 a, a:visited, a:hover, a:active {
 	color: inherit;
 	text-decoration: none;
 }
 
-.bottom {
-	position: fixed;
-	text-align: center;
-	color: #ecf0f1;
-    bottom: 0;
-    width: 100%;
+/* Title */
+
+.name {
+	font-size: 75px;
+	margin: 50px 0 0;
+	font-weight: bold;
 }
 
-.bottom:hover {
-	color: #2c3e50;
+@media (min-width: 768px) {
+	.name {
+		font-size: 110px;
+		margin: 200px 0 0;
+	}
+}
+
+.colorize {
+	-webkit-transition : color 0.5s;
+	transition         : color 0.5s;
+}
+
+.colorize:hover {
+	color: #fff;
+}
+
+/* Button */
+
+.btn-front {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	top: 60vh;
+    border-color: #fff;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+	-webkit-transition : border-radius 250ms;
+	transition         : border-radius 250ms;
+}
+
+.btn-front:hover {
+    color: #fff;
+    border-radius: 20px;
+}
+
+.btn-front:visited {
+    color: #fff;
+}
+
+.btn-front:focus {
+    color: #fff;
+}
+
+/* Social Media */
+
+.container-fluid {
+	background: #333;
+	box-shadow: 0 -5px 10px #001;
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.social-media {
+    font-size: 30px;
+}
+
+.right-spaced {
+    margin-right: 10px;
+}
+
+.left-spaced {
+    margin-left: 10px;
+}
+
+.both-spaced {
+    margin: 0 10px;
+}
+
+@media (min-width: 768px) {
+	.social-media {
+	    font-size: 50px;
+	}	
+
+	.right-spaced {
+	    margin-right: 15px;
+	}
+
+	.left-spaced {
+	    margin-left: 15px;
+	}
+
+	.both-spaced {
+	    margin: 0 15px;
+	}
+}
+
+.social-link {
+    color: #eee;
+	-webkit-transition : color 250ms;
+	transition         : color 250ms;
+}
+
+.social-link:visited {
+	color: #eee;
+}
+
+.social-link:focus {
+    color: #eee;
+}
+
+.social-link:hover {
+    color: #001;
+}
+
+.twitter-link:hover {
+    color: #55acee;
+}
+
+.youtube-link:hover {
+    color: #cd201f;
+}
+
+.github-link:hovwe {
+	color: #171515;
+}
+
+.linkedin-link:hover {
+	color: #0077b5;
 }
