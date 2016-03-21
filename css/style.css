@@ -1,0 +1,56 @@
+/* Main */
+
+body {
+	background: #3498db;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+p {
+	font-size: 16px;
+}
+
+.name {
+	font-size: 110px;
+	margin: 200px 0 0;
+	font-weight: bold;
+}
+
+.colorize {
+	-webkit-transition: color 0.5s;
+    transition:         color 0.5s;
+}
+
+.colorize:hover {
+	color: white;
+}
+
+.caps {
+	font-family: Oswald, sans-serif;
+	font-size: 40px;
+	letter-spacing: 1px;
+	color: white;
+	margin: 100px 0 0;
+}
+
+.shadowed {
+	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 1);
+}
+
+/* Clear default CSS links */
+a, a:visited, a:hover, a:active {
+	color: inherit;
+	text-decoration: none;
+}
+
+.bottom {
+	position: fixed;
+	text-align: center;
+	color: #ecf0f1;
+    bottom: 0;
+    width: 100%;
+}
+
+.bottom:hover {
+	color: #2c3e50;
+}
